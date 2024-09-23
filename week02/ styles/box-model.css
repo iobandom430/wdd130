@@ -1,6 +1,6 @@
-.callout { maximum width: 200px; 
-    margin: 20px 
-    padding: 100px}
+.callout { width: 200px; 
+    margin: 20px ;
+    padding: 100px; }
 
 .callout img {
 	

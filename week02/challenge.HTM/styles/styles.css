@@ -1,0 +1,46 @@
+/* Styles for the nav bar */
+nav {
+    background-color: #333; /* Choose a background color of your choice */
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+    display: block; /* Stack links vertically */
+}
+
+/* Styles for the h1 heading */
+h1 {
+    color: steelblue; /* Change this to any shade of blue */
+    padding: 20px 0;
+    font-size: 2.5rem; /* Optional: Adjust the font size as desired */
+}
+
+/* Styles for the image */
+img {
+    width: 200px;
+    height: auto; /* This allows the height to adjust automatically */
+    padding: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+/* Styles for the paragraph */
+p {
+    padding: 15px;
+    color: darkgray; /* Choose any color except black */
+    font-size: 1.1rem; /* Optional: Adjust font size */
+}
+
+/* Styles for the entire section */
+section {
+    width: 600px;
+    margin: 0 auto; /* This centers the section horizontally */
+    padding: 20px;
+}
+
+section * {
+    padding: 10px 0; /* Ensures all elements inside the section have padding */
+}
