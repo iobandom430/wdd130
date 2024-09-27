@@ -37,7 +37,7 @@ p {
 /* Styles for the entire section */
 section {
     width: 600px;
-    margin: 0 auto; /* This centers the section horizontally */
+    margin: -0 auto; /* This centers the section horizontally */
     padding: 20px;
 }
 
