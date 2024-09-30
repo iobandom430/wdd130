@@ -2,7 +2,7 @@ nav{
     background-color: steelblue;
     padding: 10px;}
 nav a{
-    color; white;
+    color; white-space: 0;
     display: block;
     padding; 20px;}
     h1{ color: steelblue;}
