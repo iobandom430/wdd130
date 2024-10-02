@@ -1,0 +1,55 @@
+.callout {
+    background-color: #002E63; /* Dark blue background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #D3D3D3; /* Light gray border */
+    font-family: 'Georgia', serif; /* Serif font for the scripture feel */
+    max-width: 600px; /* Limit width for readability */
+    margin: 0 auto; /* Center the container */
+    position: relative; /* For positioning the image inside */
+  }
+  
+  .callout img {
+    float: right; /* Float image to the right */
+    margin-left: 15px; /* Spacing between text and image */
+    border: 2px solid #D3D3D3; /* Border around the image */
+    border-radius: 5px; /* Rounded image corners */
+    max-width: 120px; /* Limit the size of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  blockquote {
+    margin: 0 0 15px 0; /* Margin for spacing between paragraphs */
+    line-height: 1.6; /* Line spacing for readability */
+    font-size: 18px; /* Adjust font size */
+    font-style: italic; /* Italic for the scripture feel */
+    quotes: "“" "”" "‘" "’"; /* Style quotes */
+  }
+  
+  blockquote:before {
+    content: open-quote; /* Open quote before the block */
+    font-size: 2em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+    margin-right: 10px;
+    color: #C0C0C0; /* Light gray for quote mark */
+  }
+  
+  blockquote:after {
+    content: close-quote; /* Close quote after the block */
+    font-size: 2em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+    margin-left: 10px;
+    color: #C0C0C0;
+  }
+  
+  cite {
+    display: block; /* Block for spacing below the text */
+    font-size: 14px; /* Smaller size for citation */
+    text-align: right; /* Align citation to the right */
+    margin-top: 10px; /* Space above the citation */
+    color: #C0C0C0; /* Light gray color */
+  }
+  
