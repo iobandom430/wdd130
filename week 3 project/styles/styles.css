@@ -1,0 +1,18 @@
+h1, h2, h3, h4, h5, h6 {
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: var(--primary-color);
+      }
+      body{ 
+        font-family: "Dosis", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: <weight>;
+          font-style: normal;
+        }
+
+        :root{ --primary-color: ;
+            --secondary-color: ;
+            --accent1-color:;
+            --accent2-color:; }
+      

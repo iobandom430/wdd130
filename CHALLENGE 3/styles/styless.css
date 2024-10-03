@@ -1,0 +1,52 @@
+h1 {
+    background-color: #333;
+    /* Choose a background color of your choice */
+    padding: 20px;
+    color: aliceblue;
+    font-size: 1.5rem;
+    
+}
+img {
+    width: 400px;
+    height: 400px; /* This allows the height to adjust automatically */
+    padding: 10px;
+}
+body{ text-align: center;
+margin: 0;}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;}
+
+
+
+.comment {
+  position: absolute;
+  bottom: 14px;  /* Adjust distance from the top */
+  left: 10px; /* Adjust distance from the left */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: background for better readability */
+  color: white;
+  padding: 5px;
+  font-size: 14px; /* Adjust font size */
+  border-radius: 3px; /* Optional: round the corners */
+
+}
+.overlay-text {
+    position: absolute;
+    bottom: 14px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    opacity: 0; 
+ transition: opacity 0.5s; 
+ border-radius: 3px; /* Optional: round the corners */
+}
+
+.image-container:hover .overlay-text {
+  opacity: 1;
+}

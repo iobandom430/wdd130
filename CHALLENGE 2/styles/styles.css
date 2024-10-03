@@ -1,0 +1,29 @@
+h1{
+    background-color:#006eb6;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    padding: 30px;
+}
+
+div{background-color:#d9d9da; 
+box-decoration-break: slice;
+padding-block: 0.0.0.0;
+}
+
+img{ width: 100px;
+    padding: -10px;
+position:absolute;
+top: 10%;
+  right: 0%;
+  transform: translate(-10%, -50%)
+}
+   
+
+ASIDE { width: rem; 
+    margin: 1rem; 
+    border: px solid rgba (0,0,0,0.0) ;/* 1 */
+    padding: 1rem;
+    background-color: #eee; color: #333;
+    text-align: left;
+}
