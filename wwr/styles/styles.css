@@ -33,7 +33,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 1.5rem; /*FONDO DEL HEADER*/
+  padding: 0.0rem; /*FONDO DEL HEADER*/
 }
 
 header a {
@@ -55,28 +55,29 @@ header a {
 
 #hero section {
   background-color: var(--accent1-color);
-  margin: 2.8rem;
+  margin: 1rem;
   display: flex;
   gap: 2rem;
-  padding: 1.5rem;
+  padding: 1rem;
   opacity: 0.8;
   border-radius: var(--border-radius);
   image-rendering: auto;
 }
 
 .container p {
-  padding: 1rems\];
+  padding: 1rem;
+  margin: 1rem; /*MARGIN OF THE TEXT*/
 }
 
 div {
-  margin:2px;
+  margin:1px;
 }
 
 .container {
   background-color: var(--accent1-color);
   border-radius: var(--border-radius);
-  margin: 3rem; /*MARGIN OF THE TEXT*/
-  margin-top: 3rem;
+  margin: 0.8rem; /*MARGIN OF THE TEXT*/
+
 }
 
 footer {
@@ -90,4 +91,8 @@ footer {
 footer #social {
   float: right;
   margin-top: -40px;
+  
 } /* para los logos  */
+header a:hover {
+  background-color: var(--accent2-color); /* Fondo claro en hover */
+  color: var(--primary-color); /* Cambiar color en hover */
