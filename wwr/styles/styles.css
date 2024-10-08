@@ -1,13 +1,7 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Permanent Marker", cursive;
-  font-weight: 400;
+  font-weight: 400; /* Ensure this is a valid number */
   font-style: normal;
-  color: var(--color);
   text-align: center;
   background-color: #d9d5d5;
   margin: 0;
@@ -16,9 +10,8 @@ h6 {
 
 body {
   font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
   font-style: normal;
+  /* Removed font-optical-sizing if present */
 }
 
 :root {
@@ -29,21 +22,19 @@ body {
 }
 
 header {
-  background-color: var(--primary-color);
+  background-color: #342f2f;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0.0rem; /*FONDO DEL HEADER*/
+  padding: 1.5rem;
 }
 
 header a {
   color: var(--primary-color);
-  /* texto del header buttoms*/
   text-decoration: none;
   display: flex;
   gap: 1rem;
   flex-direction: row;
-  border-radius: -4px;
 }
 
 #hero {
@@ -54,45 +45,31 @@ header a {
 }
 
 #hero section {
-  background-color: var(--accent1-color);
-  margin: 1rem;
+  background-color: #ceeeea;
+  margin: 2.8rem;
   display: flex;
   gap: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   opacity: 0.8;
-  border-radius: var(--border-radius);
   image-rendering: auto;
 }
 
-.container p {
-  padding: 1rem;
-  margin: 1rem; /*MARGIN OF THE TEXT*/
-}
-
-div {
-  margin:1px;
-}
-
 .container {
-  background-color: var(--accent1-color);
-  border-radius: var(--border-radius);
-  margin: 0.8rem; /*MARGIN OF THE TEXT*/
-
+  background-color: #ceeeea;
+  margin: 3rem;
 }
 
 footer {
-  background-color: var(--primary-color);
+  background-color: #342f2f;
   color: var(--accent2-color);
   text-align: center;
-  padding: 1.1px;
+  padding: 1.1rem; /* Ensure padding values are valid */
   position: relative;
 }
 
 footer #social {
   float: right;
-  margin-top: -40px;
-  
-} /* para los logos  */
-header a:hover {
-  background-color: var(--accent2-color); /* Fondo claro en hover */
-  color: var(--primary-color); /* Cambiar color en hover */
+  margin-top: 0; /* Ensure positive margin values */
+}
+
+@font
