@@ -22,10 +22,10 @@ body {
 }
 
 :root {
-  --primary-color: #342f2f;
-  --secondary-color: #000000;
-  --accent1-color: #ceeeea;
-  --accent2-color: #ffffff;
+  --primary-color: #737373;
+  --secondary-color: #1c1b1b;
+  --accent1-color: #f9f9f9;
+  --accent2-color: #302b2b;
 }
 
 header {
@@ -33,17 +33,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0.rem; /*FONDO DEL HEADER*/
+  padding:2px; /*FONDO DEL HEADER*/
 }
 
 header a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   /* texto del header buttoms*/
-  text-decoration: none;
-  display: flex;
-  gap: 1rem;
-  flex-direction: row;
-  border-radius: -4px;
+  border-radius: 4px;
+  grid: 10px;
+  flex-wrap: space-between 
 }
 
 #hero {
@@ -77,6 +75,10 @@ div {
   background-color: var(--accent1-color);
   border-radius: var(--border-radius);
   margin: 0.8rem; /*MARGIN OF THE TEXT*/
+  flex-direction: row;
+  display: flex; justify-content: space-around;
+
+
 
 }
 
@@ -93,3 +95,5 @@ footer #social {
   margin-top: -40px;
   
 } /* para los logos  */
+
+
