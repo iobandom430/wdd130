@@ -14,7 +14,7 @@ h6 {
 
 h1 {
   font-family: "Permanent Marker", cursive;
-  font-weight: 1000px;
+  font-weight: 1000;
   font-style: normal;
   color: #192129;
   text-align: center;
@@ -37,8 +37,7 @@ main {
 
 body {
   font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: 400;
   font-style: normal;
   margin: 0;
 }
@@ -63,8 +62,8 @@ header a {
   color: var(--secondary-color);
   /* texto del header buttoms*/
   border-radius: 4px;
-  grid: 10px;
-  flex-wrap: space-between;
+  display: flex; /* Added flexbox */
+justify-content: space-between;
   gap: 30px;
 }
 
