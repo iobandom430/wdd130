@@ -51,11 +51,19 @@ body {
 
 header {
   background-color: var(--primary-color);
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: space-around;
   padding: 1px;
   /*FONDO DEL HEADER*/
+  
+ 
+}
+
+nav {
+display: flex;
+
+gap: 5px;
 }
 
 header a {
@@ -68,10 +76,11 @@ justify-content: space-between;
 }
 
 #hero {
-  background-image: url("https://i.etsystatic.com/34441425/r/il/3b4442/3699571894/il_1588xN.3699571894_4chi.jpg");
+  background-image: url("https://i.etsystatic.com/34441425/r/il/3b4442/3699571894/il_1588xN.3699571894_4chi.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 }
 
 #hero div {
