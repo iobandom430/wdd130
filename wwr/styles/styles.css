@@ -75,9 +75,9 @@ header a {
   background-position: center;
 }
 
-#hero section {
+#hero div {
   background-color: var(--accent1-color);
-  margin: 1rem;
+ 
   display: flex;
   gap: 2rem;
   padding: 1rem;
@@ -130,3 +130,4 @@ footer #social {
 }
 
 /* para los logos  */
+figure{text-align: center;}
