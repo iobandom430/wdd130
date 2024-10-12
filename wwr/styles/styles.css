@@ -6,28 +6,28 @@ h6 {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
-  color: var(--color);
+  color: rgb(229, 244, 17);
   text-align: center;
-  background-color: #d9d5d5;
-
+  padding: 20px;
+  /* Espaciado alrededor del texto */
+  background-color: rgba(1, 26, 6, 0.7);
+  /* Fondo semi-transparente */
 }
 
 h1 {
   font-family: "Permanent Marker", cursive;
-  font-weight: 1000;
+  font-weight:1000;
   font-style: normal;
-  color: #192129;
+  color: #93bc52;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Fondo semi-transparente */
-  color: white;
+ 
+  color: rgb(234, 245, 74);
   /* Color del texto */
-  padding: 10px;
+  padding: 30px;
   /* Espaciado alrededor del texto */
   border-radius: 1px;
   /* Bordes redondeados */
   margin: 0;
-
 }
 
 main {
@@ -43,13 +43,14 @@ body {
 }
 
 :root {
-  --primary-color: #cac8c8;
-  --secondary-color: #1c1b1b;
+  --primary-color:  rgba(224, 227, 226, 0.7);
+  --secondary-color: #303046;
   --accent1-color: #f9f9f9;
   --accent2-color: #302b2b;
 }
 
 header {
+  
   background-color: var(--primary-color);
   display:flex;
   align-items: center;
@@ -62,11 +63,11 @@ header {
 
 nav {
 display: flex;
-
-gap: 5px;
+gap: 10px;
 }
 
 header a {
+  
   color: var(--secondary-color);
   /* texto del header buttoms*/
   border-radius: 4px;
@@ -76,29 +77,32 @@ justify-content: space-between;
 }
 
 #hero {
-  background-image: url("https://i.etsystatic.com/34441425/r/il/3b4442/3699571894/il_1588xN.3699571894_4chi.jpg"); 
+  background-image: url("https://media.istockphoto.com/id/611622826/es/foto/alpes-austr%C3%ADacos-comenzando-famosas-cascadas-de-krimml.jpg?s=612x612&w=0&k=20&c=ILZo3EqGYJHnBrGv1tHBUHY6D50DB-9hd4_quvFH3hs="); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 
 }
 
 #hero div {
   background-color: var(--accent1-color);
- 
   display: flex;
   gap: 2rem;
   padding: 1rem;
   opacity: 0.8;
   border-radius: var(--border-radius);
   image-rendering: auto;
+  margin: 0 0.8rem;
+  
+
 }
 
 .container p {
   padding: 1rem;
   margin: 1rem;
   /*MARGIN OF THE TEXT*/
-
+  
 }
 
 
@@ -106,7 +110,6 @@ justify-content: space-between;
 .container {
   background-color: var(--accent1-color);
   border-radius: var(--border-radius);
-  margin: 0 0.8rem;
   /*MARGIN OF THE TEXT*/
   flex-direction: row;
   display: flex;
