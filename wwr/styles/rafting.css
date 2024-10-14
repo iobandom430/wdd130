@@ -1,0 +1,144 @@
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(229, 244, 17);
+  text-align: center;
+  padding: 20px;
+  /* Espaciado alrededor del texto */
+  background-color: rgba(1, 26, 6, 0.7);
+  /* Fondo semi-transparente */
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-weight:1000;
+  font-style: normal;
+  color: #93bc52;
+  text-align: center;
+ 
+  color: rgb(234, 245, 74);
+  /* Color del texto */
+  padding: 30px;
+  /* Espaciado alrededor del texto */
+  border-radius: 1px;
+  /* Bordes redondeados */
+  margin: 0;
+}
+
+main {
+  margin: 0;
+  border-style: none;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+:root {
+  --primary-color:  rgba(224, 227, 226, 0.7);
+  --secondary-color: #303046;
+  --accent1-color: #f9f9f9;
+  --accent2-color: #302b2b;
+}
+
+header {
+  
+  background-color: var(--primary-color);
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1px;
+  /*FONDO DEL HEADER*/
+  
+ 
+}
+
+nav {
+display: flex;
+gap: 10px;
+}
+
+header a {
+  
+  color: var(--secondary-color);
+  /* texto del header buttoms*/
+  border-radius: 4px;
+  display: flex; /* Added flexbox */
+justify-content: space-between;
+  gap: 30px;
+}
+
+#hero {
+  background-image: url("https://media.istockphoto.com/id/611622826/es/foto/alpes-austr%C3%ADacos-comenzando-famosas-cascadas-de-krimml.jpg?s=612x612&w=0&k=20&c=ILZo3EqGYJHnBrGv1tHBUHY6D50DB-9hd4_quvFH3hs="); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+
+}
+
+#hero div {
+  background-color: var(--accent1-color);
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  opacity: 0.8;
+  border-radius: var(--border-radius);
+  image-rendering: auto;
+  margin: 0 0.8rem;
+  
+
+}
+
+.container p {
+  padding: 1rem;
+  margin: 1rem;
+  /*MARGIN OF THE TEXT*/
+  
+}
+
+
+
+.container {
+  background-color: var(--accent1-color);
+  border-radius: var(--border-radius);
+  /*MARGIN OF THE TEXT*/
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.gallery {
+
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem
+}
+
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 1.1px;
+  position: relative;
+}
+
+footer #social {
+  float: right;
+  margin-top: -40px;
+
+}
+
+/* para los logos  */
+figure{text-align: center;}
