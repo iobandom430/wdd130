@@ -1,4 +1,16 @@
-h2,
+h2{ font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(229, 244, 17);
+  text-align: center;
+  padding: 20px;
+  /* Espaciado alrededor del texto */
+  background-color: rgba(1, 26, 6, 0.7);
+  /* Fondo semi-transparente */
+  margin-bottom:0;
+}
+#always{margin-top: 0;}
+
 h3,
 h4,
 h5,
@@ -93,7 +105,7 @@ justify-content: space-between;
   opacity: 0.8;
   border-radius: var(--border-radius);
   image-rendering: auto;
-  margin: 0 0.8rem;
+ 
   
 
 }
@@ -142,3 +154,5 @@ footer #social {
 
 /* para los logos  */
 figure{text-align: center;}
+
+.subhero{ margin: 0 0.8rem;}  
