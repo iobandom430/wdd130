@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" quiz">
+    <meta name="description" content="quiz">
     <meta name="author" content="IAN OBANDO">
     <title>QUIZ HTML & CSS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https:// fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=merriweather:wght@400;700&family=roboto:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=merriweather:wght@400;700&family=roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="quiz.css">
 </head>
 
@@ -18,48 +18,65 @@
         <h1>Basic HTML and CSS Quiz</h1>
     </header>
     <main>
-        <FORM>
-            
-            <FIELDset>
+        <form>
+            <fieldset>
                 <legend>Enter your information </legend>
                 <div class="form-item column2">
-                <label for="fullname">Student Name:</label>
-                <input type="text"id="fullname" name="fullname">
-               </div>
-               <div class="form-item column2">
-                <label for="useremail">Email</label>
-                <input type="email"id="useremail" name="useremail">
-            </div>
-            </FIELDset>
+                    <label for="fullname">Student Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+                <div class="form-item column2">
+                    <label for="age">Your Age:</label>
+                    <input type="number" id="age" name="age" min="1">
+                </div>
+            </fieldset>
+
             <fieldset>
                 <legend>Questions</legend>
-                <label for="Questions" >What is the HTML stand for?</label>
-                <select id=" Answers" name="Answers">
-                    <option value="none"></option>
-                    <option value="HyperText Markup Language">HyperText Markup Language</option>
-                    <option value="Hot type Mapple Line">Hot Mapple Line</option>
-                    <option value="Hiphop turtle Mango Lime">Hiphop turtle Mango Lime</option>
-                    <option value="Hyper text message long">Hyper text message long</option>
-                    
-                </select>
 
-                <label for="Question"> What is the proper HTML structure? Multiple Selection! 
-                <p>Html<input type="checkbox" id="Html" name="Html"> </p>
-                   <p> Head<input type="checkbox" id="head" name="head"></p>
-                   <p>Body<input type="checkbox" id="body" name="body"></p>
-                   <p>M<input type="checkbox" id="Main" name="Main"></p>
-                   <p>HEADER<input type="checkbox" id="header" name="header"></p>
-                   <p>FOOTER<input type="checkbox" id="footer" name="footer"></p>
+                <!-- Question 1 -->
+                <div class="form-item">
+                    <label for="q1">What does HTML stand for?</label>
+                    <select id="q1" name="q1">
+                        <option value="none"></option>
+                        <option value="HyperText Markup Language">HyperText Markup Language</option>
+                        <option value="Hot Mapple Line">Hot Mapple Line</option>
+                        <option value="Hiphop turtle Mango Lime">Hiphop turtle Mango Lime</option>
+                        <option value="Hyper text message long">Hyper text message long</option>
+                    </select>
+                </div>
 
-                   <label for="name">What is CSS?:</label>
-                   <input type="text" id="ANS" name="AnS" />
+                <!-- Question 2 -->
+                <div class="form-item">
+                    <label for="q2">What is the proper HTML structure? (Multiple Selection)</label>
+                    <p>Html <input type="checkbox" id="q2_html" name="q2_html"></p>
+                    <p>Head <input type="checkbox" id="q2_head" name="q2_head"></p>
+                    <p>Body <input type="checkbox" id="q2_body" name="q2_body"></p>
+                    <p>Main <input type="checkbox" id="q2_main" name="q2_main"></p>
+                    <p>Header <input type="checkbox" id="q2_header" name="q2_header"></p>
+                    <p>Footer <input type="checkbox" id="q2_footer" name="q2_footer"></p>
+                </div>
 
-                    <label for="ans2">write about the padding</label>
-                    <textarea id="feedback" name="feedback" rows="4" placeholder="enter text"></textarea>
-                </label>
+                <!-- Question 3 -->
+                <div class="form-item">
+                    <label for="q3">What is CSS?</label>
+                    <input type="text" id="q3" name="q3">
+                </div>
+
+                <!-- Question 4 -->
+                <div class="form-item">
+                    <label for="q4">Write about the padding:</label>
+                    <textarea id="q4" name="q4" rows="4" placeholder="Enter text"></textarea>
+                </div>
+
             </fieldset>
-            <button type="submit"> Submit Quiz</button>
-        </FORM>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
     </main>
 
     <footer>
