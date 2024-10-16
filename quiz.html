@@ -9,8 +9,10 @@
     <title>QUIZ HTML & CSS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=merriweather:wght@400;700&family=roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="quiz.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=merriweather:wght@400;700&family=roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/quiz.css">
 </head>
 
 <body>
@@ -53,25 +55,30 @@
                 <!-- Question 2 -->
                 <div class="form-item">
                     <label for="q2">What is the proper HTML structure? (Multiple Selection)</label>
-                    <p>Html <input type="checkbox" id="q2_html" name="q2_html"></p>
-                    <p>Head <input type="checkbox" id="q2_head" name="q2_head"></p>
-                    <p>Body <input type="checkbox" id="q2_body" name="q2_body"></p>
-                    <p>Main <input type="checkbox" id="q2_main" name="q2_main"></p>
-                    <p>Header <input type="checkbox" id="q2_header" name="q2_header"></p>
-                    <p>Footer <input type="checkbox" id="q2_footer" name="q2_footer"></p>
+                    <select id="q2" name="q2">
+                        <p>Html <input type="checkbox" id="q2_html" name="q2_html"></p>
+                        <p>Head <input type="checkbox" id="q2_head" name="q2_head"></p>
+                        <p>Body <input type="checkbox" id="q2_body" name="q2_body"></p>
+                        <p>Main <input type="checkbox" id="q2_main" name="q2_main"></p>
+                        <p>Header <input type="checkbox" id="q2_header" name="q2_header"></p>
+                        <p>Footer <input type="checkbox" id="q2_footer" name="q2_footer"></p>
+                    </select>
                 </div>
 
                 <!-- Question 3 -->
                 <div class="form-item">
-                    <label for="q3">What is CSS?</label>
-                    <input type="text" id="q3" name="q3">
+                    <select id="q3" name="q3">
+                        <label for="q3">What is CSS?</label>
+                        <input type="text" id="q3" name="q3">
+                    </select>
                 </div>
 
                 <!-- Question 4 -->
                 <div class="form-item">
-                    <label for="q4">Write about the padding:</label>
-                    <textarea id="q4" name="q4" rows="4" placeholder="Enter text"></textarea>
-                </div>
+                    <select id="q4" name="q4">
+                        <label for="q4">Write about the padding:</label>
+                        <textarea id="q4" name="q4" rows="4" placeholder="Enter text"></textarea>
+                    </select>
 
             </fieldset>
 
