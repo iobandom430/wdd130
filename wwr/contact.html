@@ -24,63 +24,62 @@
             <a href="contact.html" class="nav-button">Contact Us</a>
         </nav>
     </header>
-    <main>
+    <h1 id="h1-contact">Contact us</h1>
+    <h2 id="h2-contact"> send us a message</h2>
+    <main class="main-contact">
         <div id="contact_us_div">
-            <h1>Contact us</h1>
-            <h2> send us a message</h2>
-            <p>
             <Address> Chezch Republik; Nazeradec, old hotel stamberk </Address>
             </p>
             <p>Phone: 999-999-999</p>
             <p>Email: <a href="mailto:">CUMORAHACADEMY@CUMORA.ORG</a></p>
-            <div class="map "> DIRECTIONS </div>
+        </div>
+        <div class="map ">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.734900418483!2d14.867196976385518!3d49.60274847144273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c8f8bdd611ed7%3A0x943faa65b83a5632!2sCumorah%20Academy!5e0!3m2!1ses-419!2scz!4v1729166939427!5m2!1ses-419!2scz"
-                width="200" height="200" allowfullscreen="" loading="lazy"
+                width="50" height="" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        </div>
+        <form>
+            <label for="fullname">Name:</label>
+            <input type="text" id="fullname" name="fullname">
+
+            <label for="useremail">Email</label>
+            <input type="email" id="useremail" name="useremail">
+
+            <label>
+                <input type="radio" name="purpose" value="general-inquiry"> General Inquiry
+            </label>
+            <label>
+                <input type="radio" name="purpose" value="reservation-question"> Reservation Question
+            </label>
+
+            <label>
+                <input type="radio" name="purpose" value="website-suggestion"> Website Suggestion
+            </label>
+
+            <label for="msg">Message:
+                <textarea id="msg" name="user_message"></textarea></label>
+
+            <label for="subscribe">
+                <input type="checkbox" id="q2_html" name="q2_html"> Allow to subscribe for newsletter</label>
+
+            <label for="button"></label>
+            <button type="submit">Submit</button>
+        </form>
 
         <div id="employees">
-            <figure id="emplo">
-                <img src="images/EMPLOYEE1.jpeg" alt="employees" width="100">
-                <figcaption> Mark Robison</figcaption>
-            </figure>
-            <figure>
-                <img src="images/EMPLOYEE2.jpeg" alt="employee2" width="100">
-                <figcaption>Brenda Elizabeth</figcaption>
-            </figure>
+            <h3 id="Crew">The Handsomes Crew</h3>
+            <div id="employee_1">
+                <figure id="emplo">
+                    <img src="images/EMPLOYEE1.jpeg" alt="employees" width="100">
+                    <figcaption> Mark Robison</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/EMPLOYEE2.jpeg" alt="employee2" width="100">
+                    <figcaption>Brenda Elizabeth</figcaption>
+                </figure>
+            </div>
         </div>
-
-
-        <label for="fullname">Name:</label>
-        <input type="text" id="fullname" name="fullname">
-
-
-        <label for="useremail">Email</label>
-        <input type="email" id="useremail" name="useremail">
-
-        <input type="radio" name="purpose" value="general-inquiry"> General Inquiry
-        </label><br>
-
-        <label>
-            <input type="radio" name="purpose" value="reservation-question"> Reservation Question
-        </label><br>
-
-        <label>
-            <input type="radio" name="purpose" value="website-suggestion"> Website Suggestion
-        </label><br><br>
-
-        <label for="msg">Message:
-            <textarea id="msg" name="user_message"></textarea></label>
-
-        <label for="subscribe">
-            <input type="checkbox" id="q2_html" name="q2_html"> Allow to subscribe for newsletter</label>
-
-        <label for="submit">
-            <input type="submit" value="Submit"></label>
-
-
     </main>
 
     <footer>

@@ -1,4 +1,5 @@
-h2{ font-family: "Permanent Marker", cursive;
+h2 {
+  font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
   color: rgb(229, 244, 17);
@@ -7,9 +8,12 @@ h2{ font-family: "Permanent Marker", cursive;
   /* Espaciado alrededor del texto */
   background-color: rgba(1, 26, 6, 0.7);
   /* Fondo semi-transparente */
-  margin-bottom:0;
+  margin-bottom: 0;
 }
-#always{margin-top: 0;}
+
+#always {
+  margin-top: 0;
+}
 
 h3,
 h4,
@@ -28,11 +32,11 @@ h6 {
 
 h1 {
   font-family: "Permanent Marker", cursive;
-  font-weight:1000;
+  font-weight: 1000;
   font-style: normal;
   color: #93bc52;
   text-align: center;
- 
+
   color: rgb(234, 245, 74);
   /* Color del texto */
   padding: 30px;
@@ -55,45 +59,46 @@ body {
 }
 
 :root {
-  --primary-color:  rgba(224, 227, 226, 0.7);
+  --primary-color: rgba(224, 227, 226, 0.7);
   --secondary-color: #303046;
   --accent1-color: #f9f9f9;
   --accent2-color: #302b2b;
 }
 
 header {
-  
+
   background-color: var(--primary-color);
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 1px;
   /*FONDO DEL HEADER*/
-  
- 
+
+
 }
 
 nav {
-display: flex;
-gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 header a {
-  
+
   color: var(--secondary-color);
   /* texto del header buttoms*/
   border-radius: 4px;
-  display: flex; /* Added flexbox */
-justify-content: space-between;
+  display: flex;
+  /* Added flexbox */
+  justify-content: space-between;
   gap: 30px;
 }
 
 #hero {
-  background-image: url("https://media.istockphoto.com/id/611622826/es/foto/alpes-austr%C3%ADacos-comenzando-famosas-cascadas-de-krimml.jpg?s=612x612&w=0&k=20&c=ILZo3EqGYJHnBrGv1tHBUHY6D50DB-9hd4_quvFH3hs="); 
+  background-image: url("https://media.istockphoto.com/id/611622826/es/foto/alpes-austr%C3%ADacos-comenzando-famosas-cascadas-de-krimml.jpg?s=612x612&w=0&k=20&c=ILZo3EqGYJHnBrGv1tHBUHY6D50DB-9hd4_quvFH3hs=");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
 
 }
 
@@ -105,8 +110,8 @@ justify-content: space-between;
   opacity: 0.8;
   border-radius: var(--border-radius);
   image-rendering: auto;
- 
-  
+
+
 
 }
 
@@ -114,7 +119,7 @@ justify-content: space-between;
   padding: 1rem;
   margin: 1rem;
   /*MARGIN OF THE TEXT*/
-  
+
 }
 
 
@@ -153,44 +158,138 @@ footer #social {
 }
 
 /* para los logos  */
-figure{text-align: center;}
-
-.subhero{ margin: 0 0.8rem;}  
-
-#contact_us_div{text-align: center;}
-style{border:0}
-
-#employees{display: flex;
-  justify-content: space-around;}
-
-  label {
-    display: block; /* Hace que la etiqueta ocupe toda la línea */
-    margin-bottom: 5px; /* Espaciado debajo de la etiqueta */
-    font-weight: bold; /* Negrita para las etiquetas */
+figure {
+  text-align: center;
 }
 
-/* Estilo para los campos de entrada */
+.subhero {
+  margin: 0 0.8rem;
+}
+
+/* Center the .main-contact section on the page */
+/* Center the .main-contact section on the page */
+.main-contact {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  justify-content: center; /* Centers the grid horizontally */
+  align-items: flex-start; /* Align items to the top */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* Contact info and map styling */
+#contact_us_div {
+  text-align: right;
+  padding-right: 20px;
+}
+
+#contact_us_div p {
+  margin-bottom: 5px; /* Reduce the margin between phone, address, and email */
+}
+
+.map {
+  padding-left: 20px; /* Add space between the map and the contact info */
+}
+
+/* Form styling */
+form {
+  max-width: 400px;
+  padding: 40px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input and Textarea styling */
 input[type="text"],
 input[type="email"],
-input[type="password"],
 textarea {
-    width: 100%; /* Ancho completo del campo */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 15px; /* Espaciado debajo del campo */
-    border: 1px solid #ccc; /* Bordes */
-    border-radius: 5px; /* Bordes redondeados */
-}
-button {
-  width: 105%;/* Ancho completo del botón */
-  background-color: rgb(30, 184, 30); /* Color de fondo verde */
-  color: white; /* Color del texto en blanco */
-  border: none; /* Sin bordes */
-  padding: 10px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-/* Estilo para el botón en hover */
-button:hover {
-  background-color: rgb(22, 145, 22); /* Color de fondo más oscuro al pasar el mouse */
+/* Button styling */
+button {
+  width: 100%;
+  background-color: rgb(30, 184, 30);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
+button:hover {
+  background-color: rgb(22, 145, 22);
+}
+
+/* Contact heading styling */
+#h1-contact {
+  background-color: rgba(1, 26, 6, 0.7);
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+#h2-contact {
+  background-color: rgba(1, 26, 6, 0.7);
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+/* Adjusting crew section below the titles */
+#crew {
+  color: rgb(236, 226, 226);
+  background-color: rgba(236, 247, 239, 0.7);
+  text-align: center;
+  margin-top: 3rem; /* Adds some spacing between the title and employee section */
+}
+
+/* Iframe styling */
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Employees section styling */
+#employees {
+  gap: 20px; /* Adds space between employee figures */
+  margin-top: 2rem; /* Add margin between employee section and content above */
+  flex-wrap: wrap; /* Allow the employee images to wrap onto the next line if necessary */
+}
+
+#employees figure {
+  text-align: center;
+  margin-bottom: 20px; /* Adds space below each employee figure */
+}
+
+#employees img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Makes the images circular */
+}
+
+/* Ensure the title and employees are properly aligned */
+#crew-title {
+  text-align: center;
+  margin-bottom: 2rem; /* Adds space between the crew title and the employee images */
+}
+#employee_1{display: flex;
+    justify-content: space-around;}
