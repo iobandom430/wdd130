@@ -165,8 +165,6 @@ figure {
 .subhero {
   margin: 0 0.8rem;
 }
-
-/* Center the .main-contact section on the page */
 /* Center the .main-contact section on the page */
 .main-contact {
   margin-top: 5rem;
@@ -178,12 +176,15 @@ figure {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+  
+  
 }
 
 /* Contact info and map styling */
 #contact_us_div {
   text-align: right;
   padding-right: 20px;
+  
 }
 
 #contact_us_div p {
@@ -202,6 +203,8 @@ form {
   border-radius: 5px;
   background-color: #ffffff;
   margin: 0 auto;
+  
+  
 }
 
 /* Label styling */
@@ -288,8 +291,11 @@ iframe {
 
 /* Ensure the title and employees are properly aligned */
 #crew-title {
+
   text-align: center;
   margin-bottom: 2rem; /* Adds space between the crew title and the employee images */
 }
 #employee_1{display: flex;
     justify-content: space-around;}
+
+
