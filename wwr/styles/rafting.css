@@ -156,3 +156,41 @@ footer #social {
 figure{text-align: center;}
 
 .subhero{ margin: 0 0.8rem;}  
+
+#contact_us_div{text-align: center;}
+style{border:0}
+
+#employees{display: flex;
+  justify-content: space-around;}
+
+  label {
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Espaciado debajo de la etiqueta */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%; /* Ancho completo del campo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado debajo del campo */
+    border: 1px solid #ccc; /* Bordes */
+    border-radius: 5px; /* Bordes redondeados */
+}
+button {
+  width: 105%;/* Ancho completo del botón */
+  background-color: rgb(30, 184, 30); /* Color de fondo verde */
+  color: white; /* Color del texto en blanco */
+  border: none; /* Sin bordes */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+/* Estilo para el botón en hover */
+button:hover {
+  background-color: rgb(22, 145, 22); /* Color de fondo más oscuro al pasar el mouse */
+}
