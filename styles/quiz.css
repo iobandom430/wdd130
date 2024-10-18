@@ -1,0 +1,51 @@
+/* Estilo general para el formulario */
+
+body
+{background-color: rgb(226, 222, 222);
+}
+
+form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 40px; /* Espaciado interno */
+    border: 1px solid #f1f1f1; /* Bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #ffffff; /* Color de fondo */
+}
+
+/* Estilo para cada etiqueta */
+label {
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Espaciado debajo de la etiqueta */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%; /* Ancho completo del campo */
+    padding: 4px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado debajo del campo */
+    border: 1px solid #ccc; /* Bordes */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón */
+button {
+    width: 105%;/* Ancho completo del botón */
+    background-color: rgb(30, 184, 30); /* Color de fondo verde */
+    color: white; /* Color del texto en blanco */
+    border: none; /* Sin bordes */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+/* Estilo para el botón en hover */
+button:hover {
+    background-color: rgb(22, 145, 22); /* Color de fondo más oscuro al pasar el mouse */
+}
+
+h1, footer{text-align: center;}
