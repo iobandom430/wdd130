@@ -36,8 +36,9 @@ h1 {
   font-style: normal;
   color: #93bc52;
   text-align: center;
-
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   color: rgb(234, 245, 74);
+  font-size: 60px;
   /* Color del texto */
   padding: 30px;
   /* Espaciado alrededor del texto */
@@ -320,7 +321,7 @@ iframe {
 /* Button container styles */
 #book-trip-container {
   text-align: center; /* Center the button */
-  margin: 30px 0; /* Add vertical spacing around the button */
+  margin: 0px 0; /* Add vertical spacing around the button */;
 }
 
 /* Button styles */
@@ -359,6 +360,7 @@ iframe {
 
 .four.wide.column:hover {
   transform: translateY(-5px);
+ 
 }
 
 .block-region {
@@ -370,7 +372,7 @@ iframe {
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #007bff;
+  background-color: #0277f5;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -379,6 +381,7 @@ iframe {
 .ui.fluid.image {
   width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -387,7 +390,7 @@ h3 {
 }
 
 .gray {
-  color: #666;
+  color: #010000;
   font-size: 0.9em;
 }
 
@@ -397,12 +400,12 @@ p {
 
 a {
   text-decoration: none;
-  color: #007bff;
+  color: #214369;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #65192a;
 }
 
 #h1-trips{  font-family: "Permanent Marker", cursive;
@@ -427,3 +430,36 @@ a:hover {
     text-align: center;
     color: rgb(42, 57, 157);
     padding: 10px}
+
+#container_class{
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;}
+
+  nput[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* Estilos del botón de compra */
+.buy-button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Cambio de color en hover */
+.buy-button:hover {
+    background-color: #45a049;
+}

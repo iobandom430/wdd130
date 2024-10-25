@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Service</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Take My Ride</h1>
+        <nav>
+        
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login">Login</a></li>
+            </ul>
+
+
+        </nav>
+        
+    </header>
+    <Body>
+    <form action="login.php" method="POST">
+        <label for="nombre_usuario">Nombre de Usuario:</label>
+        <input type="text" name="nombre_usuario" required>
+        <br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contrasena" required>
+        <br>
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+</Body>
+    <footer>
+        <p>&copy; 2024 Take My Ride. All rights reserved.</p>
+    </footer>
+</body>
+</html>

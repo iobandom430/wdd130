@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: rgb(246, 243, 243);
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero{ background: url(https://www.autonemam.cz/wp-content/uploads/2014/08/pujc-si-me-dodavka-automat-e1552844283502.jpg) no-repeat center center/cover; 
+    width: auto;}
+
+
+.titulo1{
+    color: rgb(244, 237, 237);
+    padding: 150px 20px;
+    text-align: center;
+    font-size: 50px;
+    /* Efecto de sombra para el texto */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Cambia los valores según el efecto deseado */}
+
+#hero form {
+    margin-top: 20px;
+}
+
+#hero input {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#hero button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#about, #cars {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.car-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(48% - 20px); /* Adjust width for two items per row */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
