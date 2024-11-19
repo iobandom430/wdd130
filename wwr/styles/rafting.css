@@ -1,4 +1,20 @@
-h2,
+h2 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(229, 244, 17);
+  text-align: center;
+  padding: 20px;
+  /* Espaciado alrededor del texto */
+  background-color: rgba(1, 26, 6, 0.7);
+  /* Fondo semi-transparente */
+  margin-bottom: 0;
+}
+
+#always {
+  margin-top: 0;
+}
+
 h3,
 h4,
 h5,
@@ -16,12 +32,13 @@ h6 {
 
 h1 {
   font-family: "Permanent Marker", cursive;
-  font-weight:1000;
+  font-weight: 1000;
   font-style: normal;
   color: #93bc52;
   text-align: center;
- 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   color: rgb(234, 245, 74);
+  font-size: 60px;
   /* Color del texto */
   padding: 30px;
   /* Espaciado alrededor del texto */
@@ -43,45 +60,46 @@ body {
 }
 
 :root {
-  --primary-color:  rgba(224, 227, 226, 0.7);
+  --primary-color: rgba(224, 227, 226, 0.7);
   --secondary-color: #303046;
   --accent1-color: #f9f9f9;
   --accent2-color: #302b2b;
 }
 
 header {
-  
+
   background-color: var(--primary-color);
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 1px;
   /*FONDO DEL HEADER*/
-  
- 
+
+
 }
 
 nav {
-display: flex;
-gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 header a {
-  
+
   color: var(--secondary-color);
   /* texto del header buttoms*/
   border-radius: 4px;
-  display: flex; /* Added flexbox */
-justify-content: space-between;
+  display: flex;
+  /* Added flexbox */
+  justify-content: space-between;
   gap: 30px;
 }
 
 #hero {
-  background-image: url("https://media.istockphoto.com/id/611622826/es/foto/alpes-austr%C3%ADacos-comenzando-famosas-cascadas-de-krimml.jpg?s=612x612&w=0&k=20&c=ILZo3EqGYJHnBrGv1tHBUHY6D50DB-9hd4_quvFH3hs="); 
+  background-image: url("https://media.istockphoto.com/id/611622826/es/foto/alpes-austr%C3%ADacos-comenzando-famosas-cascadas-de-krimml.jpg?s=612x612&w=0&k=20&c=ILZo3EqGYJHnBrGv1tHBUHY6D50DB-9hd4_quvFH3hs=");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
 
 }
 
@@ -93,8 +111,8 @@ justify-content: space-between;
   opacity: 0.8;
   border-radius: var(--border-radius);
   image-rendering: auto;
-  margin: 0 0.8rem;
-  
+
+
 
 }
 
@@ -102,7 +120,7 @@ justify-content: space-between;
   padding: 1rem;
   margin: 1rem;
   /*MARGIN OF THE TEXT*/
-  
+
 }
 
 
@@ -141,4 +159,307 @@ footer #social {
 }
 
 /* para los logos  */
-figure{text-align: center;}
+figure {
+  text-align: center;
+}
+
+.subhero {
+  margin: 0 0.8rem;
+}
+/* Center the .main-contact section on the page */
+.main-contact {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  justify-content: center; /* Centers the grid horizontally */
+  align-items: flex-start; /* Align items to the top */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  
+  
+}
+
+/* Contact info and map styling */
+#contact_us_div {
+  text-align: right;
+  padding-right: 20px;
+  
+}
+
+#contact_us_div p {
+  margin-bottom: 5px; /* Reduce the margin between phone, address, and email */
+}
+
+.map {
+  padding-left: 20px; /* Add space between the map and the contact info */
+}
+
+/* Form styling */
+form {
+  max-width: 400px;
+  padding: 40px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  
+  
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input and Textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  background-color: rgb(30, 184, 30);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(22, 145, 22);
+}
+
+/* Contact heading styling */
+#h1-contact {
+  background-color: rgba(1, 26, 6, 0.7);
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+#h2-contact {
+  background-color: rgba(1, 26, 6, 0.7);
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+/* Adjusting crew section below the titles */
+#crew {
+  color: rgb(236, 226, 226);
+  background-color: rgba(236, 247, 239, 0.7);
+  text-align: center;
+  margin-top: 3rem; /* Adds some spacing between the title and employee section */
+}
+
+/* Iframe styling */
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Employees section styling */
+#employees {
+  gap: 20px; /* Adds space between employee figures */
+  margin-top: 2rem; /* Add margin between employee section and content above */
+  flex-wrap: wrap; /* Allow the employee images to wrap onto the next line if necessary */
+}
+
+#employees figure {
+  text-align: center;
+  margin-bottom: 20px; /* Adds space below each employee figure */
+}
+
+#employees img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Makes the images circular */
+}
+
+/* Ensure the title and employees are properly aligned */
+#crew-title {
+
+  text-align: center;
+  margin-bottom: 2rem; /* Adds space between the crew title and the employee images */
+}
+#employee_1{display: flex;
+    justify-content: space-around;}
+
+.style1{ background-image: url(https://images.unsplash.com/photo-1503232478550-492d531afef9?q=80&w=2256&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  padding: 50px 0; /* Add padding to give space around content */
+  color: white; /* Default text color to white for better contrast */
+}
+
+/* Heading styles */
+#homeh1 {
+  text-align: center; /* Center the heading */
+  font-size: 48px; /* Increase the font size */
+  color: #ff6600; /* Change the color to a vibrant orange */
+  margin: 20px 0; /* Add vertical spacing */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+  font-family: 'Permanent Marker', cursive; /* Use the specified font */
+  letter-spacing: 1px; /* Slightly increase spacing between letters */
+  line-height: 1.2; /* Adjust line height for better readability */
+}
+
+/* Button container styles */
+#book-trip-container {
+  text-align: center; /* Center the button */
+  margin: 0px 0; /* Add vertical spacing around the button */;
+}
+
+/* Button styles */
+#book-trip-button {
+  background-color: #ff6600; /* Button color */
+  color: white; /* Text color */
+  padding: 15px 30px; /* Padding for the button */
+  font-size: 20px; /* Font size */
+  border-radius: 8px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  font-family: 'Permanent Marker', cursive; /* Use the specified font */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  display: inline-block; /* Ensure button is treated as an inline element */
+}
+
+#book-trip-button:hover {
+  background-color: #ff3300; /* Hover effect */
+}
+
+.ui.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.four.wide.column {
+  width: calc(25% - 20px);
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.four.wide.column:hover {
+  transform: translateY(-5px);
+ 
+}
+
+.block-region {
+  position: relative;
+  padding: 15px;
+}
+
+.ui.ribbon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #0277f5;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.ui.fluid.image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.gray {
+  color: #010000;
+  font-size: 0.9em;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #214369;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #65192a;
+}
+
+#h1-trips{  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(229, 244, 17);
+  text-align: center;
+  padding: 20px;
+  /* Espaciado alrededor del texto */
+  background-color: rgba(1, 26, 6, 0.7);
+  /* Fondo semi-transparente */
+  margin-bottom: 0;
+}
+#h1-trips {
+  background-color: #c2d1da;
+  text-align: center;
+  color: rgb(42, 57, 157);
+  padding: 10px}
+
+#h3-crew{
+    background-color: #c2d1da;
+    text-align: center;
+    color: rgb(42, 57, 157);
+    padding: 10px}
+
+#container_class{
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;}
+
+  nput[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* Estilos del botón de compra */
+.buy-button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Cambio de color en hover */
+.buy-button:hover {
+    background-color: #45a049;
+}

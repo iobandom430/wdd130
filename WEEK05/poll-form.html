@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 / HTML FORM - USER POLL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https:// fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=merriweather:wght@400;700&family=roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 / IAN KEVIN OBANDO MONGE / HTML FORM - USER POLL</h1>
+    </header>
+    <main>
+        <FORM>
+            <FIELDset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                <label for="fullname">Fullname:</label>
+                <input type="text"id="fullname" name="fullname">
+               </div>
+               <div class="form-item column2">
+                <label for="useremail">email</label>
+                <input type="email"id="useremail" name="useremail">
+            </div>
+            </FIELDset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser" >what is your favorite internet browser?</label>
+                <select id=" browser" name="browser">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Edge">Edge</option>
+                    <option value="Brave">Brave</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="pet">Do you have a household pet?
+                    <input type="checkbox" id="pet" name="pet">
+                    <label for="feedback">list the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdan Netherlands, Tibuktu Mali"></textarea>
+                </label>
+            </fieldset>
+            <button type="submit"> Submit Poll</button>
+        </FORM>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 / WDD 130 / HTML FORM - USER POLL ACTIVITY/ IAN KEVIN OBANDO MONGE</p>
+    </footer>
+</body>
+
+</html>

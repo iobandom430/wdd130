@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obando & Obando Abogados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/converted_image_transparent.png" alt="logo" width="200">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="login.php">Iniciar Sesión</a> <!-- Link para iniciar sesión -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="title">Obando & Obando Abogados <span>Law Firm</span></h1>
+            <p>Nuestra misión es proporcionar soluciones legales efectivas que protejan los derechos de nuestros clientes y contribuyan a su bienestar. Nos caracterizamos por nuestro enfoque ético, confidencial y transparente en cada caso, asegurando que nuestros clientes reciban el mejor acompañamiento legal posible.</p>
+            <button>Learn More</button>
+        </section>
+
+        <!-- Documentos Descargables -->
+        <section id="documents" class="documents">
+            <h2>Documentos Descargables</h2>
+            <ul>
+                <li><a href="download.php?file=documento.pdf">Descargar Documento PDF</a></li>
+                <li><a href="download.php?file=documento.docx">Descargar Documento Word</a></li>
+            </ul>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Nuestras Características</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-lock"></i>
+                    <h3>Seguridad</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum nec arcu.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Familia</h3>
+                    <p>Expertise in divorce, child custody, and adoption</p>
+                </div>
+                <div class="service">
+                    <h3>Civil</h3>
+                    <p>Aggressive defense for DUI, theft, and assault charges</p>
+                </div>
+                <div class="service">
+                    <h3>Cobros</h3>
+                    <p>Compassionate representation for accident victims</p>
+                </div>
+                <div class="service">
+                    <h3>Notarial</h3>
+                    <p>Compassionate representation for accident victims</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>Acerca de Nosotros</h2>
+            <p>Our law firm is dedicated to providing exceptional legal services to our clients.</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Meet Our Team</h3>
+                    <p>Our team of experienced lawyers and staff are committed to delivering outstanding results.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Our Mission</h3>
+                    <p>To provide personalized and effective legal solutions to our clients.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contacta con Nosotros</h2>
+            <p>Contact us to schedule a consultation or learn more about our services.</p>
+            <form>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Mensaje"></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+
+        <!-- Section for User Authentication -->
+        <section id="user-auth">
+            <h2>Iniciar Sesión / Registrarse</h2>
+
+            <!-- Registro -->
+            <h3>Registrarse</h3>
+            <form method="POST" action="register.php">
+                <div>
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+            <p><a href="login.php">¿Ya tienes cuenta? Inicia sesión aquí.</a></p>
+
+            <!-- Inicio de Sesión -->
+            <h3>Iniciar Sesión</h3>
+            <form method="POST" action="login.php">
+                <div>
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+
+        <!-- Dashboard (Protegido para usuarios autenticados) -->
+        <php>
+        // Ejemplo de Dashboard, solo visible para usuarios que han iniciado sesión
+        session_start();
+        if (isset($_SESSION['user_id'])) {
+            echo '<section id="dashboard">';
+            echo '<h2>Bienvenido al Panel de Control, ' . $_SESSION['username'] . '</h2>';
+            echo '<p><a href="logout.php">Cerrar Sesión</a></p>';
+            echo '</section>';
+        }
+    </php>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
